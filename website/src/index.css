@@ -10,3 +10,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1 {
+  font-size: calc(4vh + 5px);
+}
+
+h2 {
+  font-size: calc(3vh + 3px);
+}
+
+h3 {
+  font-size: calc(2.5vh + 2px);
+}
+
+p {
+  font-size: calc(2vh + 2px);
+}
