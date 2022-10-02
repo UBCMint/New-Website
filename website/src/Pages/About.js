@@ -18,7 +18,7 @@ function About(props) {
               noWrap
               className={classes.toolbarTitle}
             >
-              Blog
+              About 
             </Typography>
       </div>
       </React.Fragment>
