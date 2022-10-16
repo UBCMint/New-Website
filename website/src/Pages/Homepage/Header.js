@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar} from "react-bootstrap";
 // import { SocialIcon } from "react-social-icons";
 import logo from "./MintLogoWhiteBG.png";
 
@@ -7,9 +7,9 @@ import logo from "./MintLogoWhiteBG.png";
 export default function Header() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" style={{color: "dark"}}>
-        <Container>
-          <Navbar.Brand href="#home">
+      <Navbar collapseOnSelect expand="lg" variant="light" className="header-navbar">
+        <Container fluid>
+          <Navbar.Brand href="#home" style={{marginLeft: 0}}>
             <img src={logo} className="App-logo" alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -18,7 +18,7 @@ export default function Header() {
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link eventKey={2} href="#get-involved">
+              <Nav.Link href="#get-involved">
                 Get Involved
               </Nav.Link>
               <Nav.Link href="#learn">Learn</Nav.Link>
@@ -35,18 +35,14 @@ export default function Header() {
                 </NavDropdown.Item>
               </NavDropdown> */}
             </Nav>
-            <Nav>
+            {/* <Nav>
               
-              {/* I'll change the background later, just make sure these work */}
-              {/* <SocialIcon url="https://instagram.com/ubcmint" />
+              I'll change the background later, just make sure these work
+              <SocialIcon url="https://instagram.com/ubcmint" />
               <SocialIcon url="https://linkedin.com/ubcmint" />
               <SocialIcon url="https://github.com/ubcmint" />
-              <SocialIcon url="https://youtube.com/ubcmint" /> */}
-            </Nav>
-
-            <Nav>
-              <i></i>
-            </Nav>
+              <SocialIcon url="https://youtube.com/ubcmint" />
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

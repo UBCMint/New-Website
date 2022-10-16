@@ -1,13 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
-import heroImg from './hero-img.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import heroImg from './hero-img.png';
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section id="hero" class="hero">
+    <section id="hero" className="hero">
       {/* <div class="container position-relative">*/}
       <Container fluid>
-        {/* <div class="row gy-5" data-aos="fade-in"> */}
+        <div data-aos="fade" data-aos-duration="1500">
         <Row gy={5}>
           {/* <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start"> */}
           <Col lg={{span: 5, offset: 1, order: 'first'}}>
@@ -18,7 +23,7 @@ export default function Hero() {
               undergraduate neurotech design team under Biomedical Engineering
               Student Team (BEST) at the University of British Columbia (UBC).
             </p>
-            <div class="d-flex justify-content-center justify-content-lg-start">
+            <div className="d-flex justify-content-center justify-content-lg-start">
               {/* <a href="#about" class="btn-get-started">
                 Find Out More
               </a> */}
@@ -45,22 +50,23 @@ export default function Hero() {
             <Image fluid src={heroImg} className="hero-img"></Image>
           </Col>
         </Row>
+        </div>
       </Container>
 
-      <div class="icon-boxes position-relative">
-        <div class="container position-relative">
-          <div class="row gy-4 mt-5">
+      <div className="icon-boxes position-relative">
+        <div className="container position-relative">
+          <div className="row gy-4 mt-5">
             <div
-              class="col-xl-3 col-md-6"
+              className="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
+              <div className="icon-box">
+                <div className="icon">
+                  <i className="bi bi-easel"></i>
                 </div>
-                <h4 class="title">
-                  <a href="" class="stretched-link">
+                <h4 className="title">
+                  <a href="" className="stretched-link">
                     Lorem Ipsum
                   </a>
                 </h4>
@@ -68,16 +74,16 @@ export default function Hero() {
             </div>
 
             <div
-              class="col-xl-3 col-md-6"
+              className="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="bi bi-gem"></i>
+              <div className="icon-box">
+                <div className="icon">
+                  <i className="bi bi-gem"></i>
                 </div>
-                <h4 class="title">
-                  <a href="" class="stretched-link">
+                <h4 className="title">
+                  <a href="" className="stretched-link">
                     Sed ut perspiciatis
                   </a>
                 </h4>
@@ -85,16 +91,16 @@ export default function Hero() {
             </div>
 
             <div
-              class="col-xl-3 col-md-6"
+              className="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="bi bi-geo-alt"></i>
+              <div className="icon-box">
+                <div className="icon">
+                  <i className="bi bi-geo-alt"></i>
                 </div>
-                <h4 class="title">
-                  <a href="" class="stretched-link">
+                <h4 className="title">
+                  <a href="" className="stretched-link">
                     Magni Dolores
                   </a>
                 </h4>
@@ -102,16 +108,16 @@ export default function Hero() {
             </div>
 
             <div
-              class="col-xl-3 col-md-6"
+              className="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div class="icon-box">
-                <div class="icon">
-                  <i class="bi bi-command"></i>
+              <div className="icon-box">
+                <div className="icon">
+                  <i className="bi bi-command"></i>
                 </div>
-                <h4 class="title">
-                  <a href="" class="stretched-link">
+                <h4 className="title">
+                  <a href="" className="stretched-link">
                     Nemo Enim
                   </a>
                 </h4>

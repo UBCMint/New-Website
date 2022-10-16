@@ -1,4 +1,10 @@
 /* Navbar */
+.header-navbar {
+  background-color: white;
+}
+/* .container {
+  margin: auto 0;
+} */
 .App-logo {
   height: auto;
   width: auto;
@@ -28,11 +34,15 @@ h3.hero-title {
   margin-right: 1rem;
   display: flex;
   text-align: center;
+  justify-content: center;
+  width: 40%;
 }
 
 .project-button {
   display: flex;
   text-align: center;
+  justify-content: center;
+  width: 40%;
 }
 
 .hero-img {
