@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Homepage from './Pages/Homepage';
+import Homepage from './Pages/Homepage/Homepage';
 import About from './Pages/About';
 import Projects from './Pages/Projects'
 import GetInvolved from './Pages/GetInvolved'
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

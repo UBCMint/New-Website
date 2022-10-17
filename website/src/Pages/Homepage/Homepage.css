@@ -1,0 +1,52 @@
+/* Navbar */
+.header-navbar {
+  background-color: white;
+}
+/* .container {
+  margin: auto 0;
+} */
+.App-logo {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+  line-height: 72px; /* whatever the fixed height of the bar is */
+  vertical-align: middle;
+}
+
+/* Hero */
+h2.hero-title {
+  font-size: 4rem;
+  margin: 2rem auto;
+}
+
+h3.hero-title {
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.hero-body {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.info-button {
+  margin-right: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.project-button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.hero-img {
+  margin-left: 5rem;
+  width: 80%;
+  height: auto;
+}
